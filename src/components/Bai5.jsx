@@ -53,12 +53,12 @@ const Bai5 = () => {
                 <div className={classes.row}>
                     <div>
                         <label htmlFor="soKhach" style={{ color: "darkred", fontWeight: "bold" }}>Số khách tham dự bữa tiệc của quý khách: </label>
-                        <input type="text" id="soKhach" className={classes.marginItem} style={{ width: "50px" }} value={soKhach} onChange={(e) => setSoKhach(e.target.value)} />
+                        <input type="text" id="soKhach" className={classes.marginItem} style={{ width: "50px" }} value={soKhach} onChange={(e) => setSoKhach(e.target.value)} required/>
                     </div>
 
                     <div className={classes.marginItem}>
                         <label htmlFor="ngayDat" style={{ color: "darkred", fontWeight: "bold" }}>Ngày: </label>
-                        <input type="date" id="ngayDat" className={classes.marginItem} value={ngayDat} onChange={(e) => setNgayDat(e.target.value)} />
+                        <input type="date" id="ngayDat" className={classes.marginItem} value={ngayDat} onChange={(e) => setNgayDat(e.target.value)} required/>
                     </div>
                 </div>
 
@@ -99,14 +99,14 @@ const Bai5 = () => {
                     <div>
                         <label htmlFor="tenKH">
                             Tên quý khách:
-                            <input type="text" id="tenKH" name="tenKH" className={classes.marginItem} value={tenKH} onChange={(e) => setTenKH(e.target.value)} />
+                            <input type="text" id="tenKH" name="tenKH" className={classes.marginItem} value={tenKH} onChange={(e) => setTenKH(e.target.value)} required/>
                         </label>
                     </div>
 
                     <div>
                         <label htmlFor="diaChi">
                             Địa chỉ liên lạc:
-                            <input type="text" id="diaChi" name="diaChi" className={classes.marginItem} value={diaChi} onChange={(e) => setDiaChi(e.target.value)} />
+                            <input type="text" id="diaChi" name="diaChi" className={classes.marginItem} value={diaChi} onChange={(e) => setDiaChi(e.target.value)} required/>
                         </label>
                     </div>
                 </div>
