@@ -1,8 +1,7 @@
 import "./App.css";
-import Form from "./components/Form";
-
+import Bai5 from "./components/Bai5";
 function App() {
-  return <Form />;
+  return <Bai5 />;
 }
 
 export default App;
